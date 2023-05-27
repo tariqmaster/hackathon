@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div>
         <div>
-            Hello World
+            Hello World from Tariq
         </div>
     </div>
   )
