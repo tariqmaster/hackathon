@@ -1,25 +1,31 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  @apply bg-blue-400;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    @apply text-black;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components{
+
+
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+  .wrapper {
+    @apply flex flex-wrap justify-between items-center font-sans bg-purple-200;
+  }
+  .maindiv {
+    @apply  grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] py-5 px-5
+  }
+  .menu {
+    @apply bg-white p-4 rounded-full;
+  }
+  .header {
+    @apply bg-slate-400 p-10;
+  }
 }
