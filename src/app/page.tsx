@@ -4,7 +4,7 @@ import Navbar from "./navbar";
 
 export default function Home() {
   return (
-    <div className="px-5 py-5">
+    <div className="px-20 py-5">
       <Navbar />
     </div>
   );
