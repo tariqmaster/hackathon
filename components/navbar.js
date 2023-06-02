@@ -1,6 +1,6 @@
 "use client"
 
-import logo from "../../public/logo.jpg";
+import logo from "../public/Logo.webp";
 import Image from "next/image";
 import Link from 'next/link'
 import SearchBar from "./search-bar";
@@ -9,14 +9,14 @@ import React, { useState } from 'react'
 // import {RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 // import { useStateContext } from '../context/StateContext';
 
-const Navbar = ({ Searchproducts }) => {
+const Navbar = () => {
   // const {showCart, setShowCart, totalQty} = useStateContext();
   // const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
     <nav className="">
-      <div className="">
-        <ul className="flex justify-between content-end">
+      <div className="flex bg-slate-500">
+        <ul className="header">
           <Link href='/'>
             <li> <Image src={logo} width={140} height={25} alt='logo' /></li>
           </Link>
