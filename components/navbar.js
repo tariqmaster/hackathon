@@ -14,7 +14,7 @@ const Navbar = () => {
   // const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className="">
+    <nav className="flex">
       <div className="flex bg-slate-500">
         <ul className="header">
           <Link href='/'>
