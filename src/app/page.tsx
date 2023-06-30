@@ -45,12 +45,9 @@ export default async function Home() {
   
     <div className='p-10 grid grid-cols-[auto,auto,auto] justify-center gap-x-5'>
       {data.map((item) => (
-      <div>
-
+        <div>
         <ProductCard item={item} />
-
-
-       </div>
+        </div>
       ))}
     </div>
     </>

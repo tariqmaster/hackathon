@@ -5,7 +5,6 @@ import Image from "next/image";
 import "./layout";
 import { Button } from "../../components/ui/button";
 import { urlForImage } from '../../sanity/lib/image';
- 
 
 
 const ProductCard:FC<{item: any}> = ({item}) => {

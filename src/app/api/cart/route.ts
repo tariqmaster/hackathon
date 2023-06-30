@@ -1,5 +1,5 @@
 import { NextRequest,NextResponse } from "next/server";
-import {db, cartTable} from "../../lib/drizzle";
+import {db, cartTable} from "../../../lib/drizzle";
 import {v4 as uuid} from "uuid";
 import { cookies } from "next/headers";
 
