@@ -15,7 +15,6 @@ const ProductCard:FC<{item: any}> = ({item}) => {
             body: JSON.stringify({
                 product_id: item._id
             })
-
         })
 
         const result = await res.json();
@@ -25,7 +24,6 @@ const ProductCard:FC<{item: any}> = ({item}) => {
 
   return (
     <div>
-
          <Image 
         width={300}
         height={300}
@@ -33,10 +31,9 @@ const ProductCard:FC<{item: any}> = ({item}) => {
         src={urlForImage(item.image).url()} alt="product" />
         <h2>{item.title}</h2>
         <h2>${item.price}</h2>
-        <button onClick={handleAddToCart} className='border py-2 px-4 rounded text-white bg-blue-600'>Add to Cart</button>
-        
+        <button onClick={handleAddToCart} className='border py-2 px-4 rounded text-white bg-blue-600'>Add to Cart</button>    
     </div>
   )
 }
 
-export default ProductCard
+export default ProductCard;
