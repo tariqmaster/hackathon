@@ -4,6 +4,8 @@ import React, { FC } from 'react'
 import Image from "next/image";
 import "./layout";
 import { Button } from "../../components/ui/button";
+
+
 import { urlForImage } from '../../sanity/lib/image';
 
 
@@ -16,10 +18,10 @@ const ProductCard:FC<{item: any}> = ({item}) => {
                 product_id: item._id
             })
         })
-
+        
         const result = await res.json();
         console.log(result);
-        
+        console.log(res.ok);
     }
 
   return (
@@ -31,7 +33,9 @@ const ProductCard:FC<{item: any}> = ({item}) => {
         src={urlForImage(item.image).url()} alt="product" />
         <h2>{item.title}</h2>
         <h2>${item.price}</h2>
-        <button onClick={handleAddToCart} className='border py-2 px-4 rounded text-white bg-blue-600'>Add to Cart</button>    
+        <button onClick={()=>handleAddToCart()} className='border py-2 px-4 rounded text-white bg-blue-600'>Add to Cart</button>
+       
+         
     </div>
   )
 }
