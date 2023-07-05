@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from "/public/logo.webp";
+import logo from "../../public/Logo.webp";
 import Image from "next/image";
 
 const Header = () => {
   return (
     <div className='flex justify-between items-center'>
-        <Image src={logo} alt="logo" className='w-40'/>
+        <Image src={logo}  alt="logo" className='w-40'/>
         <ul className='flex gap-x-3'>
             <li className='text-lg'>Female</li>
             <li className='text-lg'>Male</li>
