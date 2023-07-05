@@ -1,6 +1,6 @@
 "use client"
 
-import logo from "../public/Logo.webp";
+
 import Image from "next/image";
 import Link from 'next/link'
 import SearchBar from "./search-bar";
@@ -15,11 +15,9 @@ const Navbar = () => {
 
   return (
     <nav className="flex">
-      <div className="flex bg-slate-500">
+      <div className=" bg-slate-500">
         <ul className="header">
-          <Link href='/'>
-            <li> <Image src={logo} width={140} height={25} alt='logo' /></li>
-          </Link>
+
 
           <Link href='/female'><li>Female</li></Link>
           <Link href='/male'><li>Male</li></Link>
