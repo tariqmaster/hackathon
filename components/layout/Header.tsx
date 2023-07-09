@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "../../public/Logo.webp";
 import Image from "next/image";
+import { ShoppingCart } from 'lucide-react';
 
 const Header = () => {
   return (
