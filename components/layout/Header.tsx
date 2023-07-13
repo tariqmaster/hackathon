@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from "../../public/Logo.webp";
+import logo from "public/Logo.webp";
 import Image from "next/image";
 import { ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
 import {Input} from "components/ui/input"
-import {Button} from "components/ui/button"
+
 import {
   Sheet,
   SheetContent,
@@ -17,7 +17,7 @@ import {Menu} from "lucide-react";
 
 const Header = () => {
   return (
-    <div className='py-6 flex justify-between items-center wrapper'>
+    <div className='wrapper py-6 flex justify-between items-center'>
         <Image src={logo}  alt="logo" className='w-40'/>
         <div className='hidden md:block'>
         <ul className='flex gap-x-5'>

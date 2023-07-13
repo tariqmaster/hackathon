@@ -12,7 +12,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
+        <main className='wrapper'>
         {children}
+        </main>
         </body>
     </html>
   );

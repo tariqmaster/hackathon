@@ -2,12 +2,12 @@ import React from 'react'
 import {Badge} from "components/ui/badge"
 import { Heart, Menu, ShoppingCart } from "lucide-react";
 import Heroimage from "public/hero.jpg";
-import { Button } from './ui/button';
+import { Button } from 'components/ui/button';
 import Image from "next/image";
 
 const hero = () => {
   return (
-    <div className='wrapper flex flex-col md:flex-row'>
+    <div className=' flex flex-col md:flex-row'>
     <div className='py-10  w-1/2'>
         <Badge className='rounded-lg  font-bold bg-blue-100 text-blue-700 px-3 py-2 text-lg'>Sale 70%</Badge>
         <br /> <br />
@@ -35,4 +35,4 @@ const hero = () => {
   )
 }
 
-export default hero
+export default hero;
